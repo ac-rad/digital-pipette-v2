@@ -26,10 +26,12 @@ This directory contains CAD files and programs for the Digital Pipette v2 introd
 ## Electric Circuit
 <img src="assets/dpv2-circuit.jpeg" width="600">
 
->Although it is not drawn explicitly, ensure that the GND of Arduino and DC 6V power supply are connected.
+Although it is not drawn explicitly, **ensure that the GND of Arduino and DC 6V power supply are connected**.
+
+**Caution**: When connecting the power supply, ensure that the voltage and polarity match the specifications of the control board. Incorrect wiring may damage the circuit or cause injury. Build and use the device at your own risk.
 
 ### Example Setup
-You can connect the Arduino, the linear actuator, and the 6V power supply using jumper wires and alligator cables. This setup works for development, but it is not recommended for production since cables get easily disconnected. Soldering wires is recommended to make connections more stable. The example shown below uses a PCB prototyping board.
+You can connect the Arduino, the linear actuator, and the 6V power supply using jumper wires and alligator cables. This setup works for development, but it is not recommended for production since cables get easily become disconnected. Soldering wires is recommended to make connections more stable. The example shown below uses a perfboard to solder cables and connectors.
 
 <img src="assets/pipette-setup.jpeg" width="600">
 
@@ -48,7 +50,7 @@ Prepare items shown in the bill of materials. Print the [platform](https://githu
 Connect the end of the linear actuator to the plunger piece with a short screw and a nut.
 
 ### Step 3
-Place an O-ring in the groove of the plunger piece. NOTE: A thin layer of electrical tape underneath the O-ring may help for maintaining an air-tight seal. 
+Place an O-ring in the groove of the plunger piece. NOTE: Applying a thin strip of electrical tape (~3 mm wide) in the groove before placing the O-ring can help achieve a tighter seal.
 
 ### Step 4
 Apply grease to the end of the plunger piece over the O-ring, and inside the syringe piece. Place the plunger piece inside the syringe.
@@ -68,6 +70,8 @@ Connect the linear actuator with the electric circuit.
 The [src](https://github.com/ac-rad/roboculture/blob/main/digital-pipette-v2/src) directory contains example code to operate the Digital Pipette v2.
 - `pipette.ino` is an example Arduino sketch
 - `controller.py` is an example Python program to send serial commands from PC to the Arduino
+
+You may need to install [pySerial](https://pyserial.readthedocs.io/en/latest/) to run the Python example.
 
 ## Citation
 If you find this useful in your research, please consider citing as below.
