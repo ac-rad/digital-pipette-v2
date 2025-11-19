@@ -1,6 +1,8 @@
 # Digital Pipette v2
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17549134.svg)](https://doi.org/10.5281/zenodo.17549134)
 
-This directory contains CAD files and programs for the Digital Pipette v2 introduced in [RoboCulture: A Robotics Platform for Automated Biological Experimentation](https://doi.org/10.48550/arXiv.2505.14941). It is the successor to the original Digital Pipette introduced [here](https://doi.org/10.1039/D3DD00115F) and avaliable on GitHub [here](https://github.com/ac-rad/digital-pipette).
+This directory contains CAD files and programs for the Digital Pipette v2 introduced in [Commit: Digital pipette: open hardware for liquid transfer in self-driving laboratories](https://doi.org/10.1039/D5DD00336A).
+It is the successor to the original Digital Pipette introduced [here](https://doi.org/10.1039/D3DD00115F) and avaliable on GitHub [here](https://github.com/ac-rad/digital-pipette).
 
 <img src="assets/dpv2.jpeg" width="600">
 
@@ -77,14 +79,11 @@ You may need to install [pySerial](https://pyserial.readthedocs.io/en/latest/) t
 If you find this useful in your research, please consider citing as below.
 
 ```
-@misc{angers2025roboculture,
-      title={RoboCulture: A Robotics Platform for Automated Biological Experimentation}, 
-      author={Kevin Angers and Kourosh Darvish and Naruki Yoshikawa and Sargol Okhovatian and Dawn Bannerman and Ilya Yakavets and Florian Shkurti and Alán Aspuru-Guzik and Milica Radisic},
+@article{yoshikawa2025commit,
+      title={Commit: Digital pipette: open hardware for liquid transfer in self-driving laboratories}, 
+      author={Naruki Yoshikawa and Kevin Angers and Kourosh Darvish and Sargol Okhovatian and Dawn Bannerman and Ilya Yakavets and Milica Radisic and Alán Aspuru-Guzik},
       year={2025},
-      eprint={2505.14941},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2505.14941}, 
+      doi={10.1039/D5DD00336A},
 }
 ```
 
